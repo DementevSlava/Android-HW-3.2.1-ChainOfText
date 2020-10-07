@@ -49,16 +49,18 @@
                 android:id="@+id/firstLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="D"
+                android:text="@string/D"
                 app:layout_constraintEnd_toStartOf="@+id/secondLetter"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/secondLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E"
+                android:text="@string/E"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/thirdLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/firstLetter" />
@@ -67,7 +69,8 @@
                 android:id="@+id/thirdLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="M"
+                android:text="@string/M"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/fourLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/secondLetter" />
@@ -76,7 +79,8 @@
                 android:id="@+id/fourLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E"
+                android:text="@string/E"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/fiveLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/thirdLetter" />
@@ -85,7 +89,8 @@
                 android:id="@+id/fiveLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N"
+                android:text="@string/N"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/sixLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/fourLetter" />
@@ -94,7 +99,8 @@
                 android:id="@+id/sixLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="T"
+                android:text="@string/T"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/sevenLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/fiveLetter" />
@@ -103,7 +109,8 @@
                 android:id="@+id/sevenLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E"
+                android:text="@string/E"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/eightLetter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/sixLetter" />
@@ -112,7 +119,8 @@
                 android:id="@+id/eightLetter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="V"
+                android:text="@string/V"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/sevenLetter"
                 app:layout_constraintEnd_toEndOf="parent"/>
