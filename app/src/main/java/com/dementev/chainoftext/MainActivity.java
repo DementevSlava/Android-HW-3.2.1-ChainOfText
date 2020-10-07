@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         numberField = findViewById(R.id.numberField);
         operationField = findViewById(R.id.operationField);
 
-
         final Button oneBtn = findViewById(R.id.oneBtn);
         final Button twoBtn = findViewById(R.id.twoBtn);
         final Button threeBtn = findViewById(R.id.threeBtn);
@@ -144,10 +143,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String tmp = numberField.getText().toString();
-                if (tmp.contains("-")){
+                if (tmp.contains("-")) {
                     tmp = tmp.substring(1);
                     numberField.setText(tmp);
-                } else{
+                } else {
                     StringBuilder sb = new StringBuilder(tmp);
                     sb.insert(0, "-");
                     numberField.setText(sb.toString().replace('.', ','));
@@ -163,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                     Double number = Double.valueOf(numberField.getText().toString());
                     Double tpm = operand * number / 100;
                     numberField.setText(tpm.toString());
-                } catch (Exception e){
+                } catch (Exception e) {
                     numberField.setText("0");
                 }
 
